@@ -29,7 +29,7 @@ This files contains all configuration (Python3, Postgresql,PIP8 etc) setup for o
 4. Download the [data](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip) from here.
 5. After downloading goto downloads folder and extract the zip file name contains **LOGS_ANALYSIS**
 6. Keep it there (or) you can move to your own project path
-7. Download this project: [Log_Analysis project](https://github.com/LavanyaMoyya/Log_Analysis)
+7. Download this project: [Log_Analysis project](https://github.com/DurgaBhavaniVankini/Log_Analysis)
 
 ### Process of executing the project:
 1. Goto Vagrant folder<br>

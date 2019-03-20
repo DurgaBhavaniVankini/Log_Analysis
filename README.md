@@ -47,7 +47,7 @@ This files contains all configuration (Python3, Postgresql,PIP8 etc) setup for o
 
 Results:
 
-1. What are the most popular three articles of all time?
+1. What are the most popular three articles of all time?<br>
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
 Top 3 Articles<br>

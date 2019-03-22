@@ -41,11 +41,15 @@ This files contains all configuration (Python3, Postgresql,PIP8 etc) setup for o
     -use '\dt' to see the tables in database<br>
     -use '\dv' to see the views in database<br>
     -use '\q' to quit the database<br>
-6. use command 'python log.py' to run the program<br>
+6. Create view error_log_view using:
+     create view error_log_view as select date(time),round(100.0*sum(case log.status when '200 OK' 
+     then 0 else 1 end)/count(log.status),2) as "Percentage Error" from log group by date(time) 
+     order by "Percentage Error" desc;
+7. use command 'python log.py' to run the program<br>
 
 ### Expected Output
 
- Results:
+  Results:
 
 1. What are the most popular three articles of all time?
 

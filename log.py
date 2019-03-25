@@ -61,7 +61,7 @@ def execute_query2():
 def execute_query3():
     '''Query to get Days with more than 1% of requests leads to errors'''
     q3 = """
-    SELECT * from error_log_view where \"Percent Error\" > 1
+    SELECT * from error_log where \"Percent Error\" > 1
     """
     output = run(q3)
     print("\n3. On which days did more than 1% of requests lead to errors?")

@@ -41,15 +41,11 @@ This files contains all configuration (Python3, Postgresql,PIP8 etc) setup for o
     -use '\dt' to see the tables in database<br>
     -use '\dv' to see the views in database<br>
     -use '\q' to quit the database<br>
-6. Create view error_log using:<br>
-     create view error_log as select date(time),round(100.0*sum(case log.status when '200 OK' 
-     then 0 else 1 end)/count(log.status),2) as "Percentage Error" from log group by date(time) 
-     order by "Percentage Error" desc;
-7. use command 'python log.py' to run the program<br>
+6. use command 'python log.py' to run the program<br>
 
 ### Expected Output
 
-  Results:
+ Results:
 
 1. What are the most popular three articles of all time?
 
@@ -57,9 +53,9 @@ This files contains all configuration (Python3, Postgresql,PIP8 etc) setup for o
 Top 3 Articles
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Candidate is jerk, alleges rival:338647 views<br>
-Bears love berries, alleges bear:253801 views<br>
-Bad things gone, say good people:170098 views<br>
+Candidate is jerk, alleges rival:338647 views
+Bears love berries, alleges bear:253801 views
+Bad things gone, say good people:170098 views
 
 2. Who are the most popular article authors of all time?
 
@@ -67,14 +63,13 @@ Bad things gone, say good people:170098 views<br>
 Most Popular Authors
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Ursula La Multa:507594 views<br>
-Rudolf von Treppenwitz:423457 views<br>
-Anonymous Contributor:170098 views<br>
+Ursula La Multa:507594 views
+Rudolf von Treppenwitz:423457 views
+Anonymous Contributor:170098 views
 
 3. On which days did more than 1% of requests lead to errors?
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Error Percent
-
+Error Percentage:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2016-07-17:2.26 % errors
+July, 17, 2016 -- 2.3% errors

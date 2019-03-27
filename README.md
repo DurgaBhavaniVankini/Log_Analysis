@@ -45,7 +45,7 @@ This files contains all configuration (Python3, Postgresql,PIP8 etc) setup for o
 
 ### Expected Output
 
- Results:
+  Results:
 
 1. What are the most popular three articles of all time?
 
@@ -71,5 +71,5 @@ Anonymous Contributor:170098 views<br>
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Error Percentage:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-July, 17, 2016 -- 2.3% errors
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7-17-2016 -->2.300% errors
